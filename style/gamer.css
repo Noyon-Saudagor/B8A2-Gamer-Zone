@@ -11,9 +11,9 @@
 :root {
     --primary-color: #534C64;
     --secondery-color: #FF42A5;
-    --third-color:#F948B2;
-    --five-color:#8758F1;
-    --fourth-color:#FFF;
+    --third-color: #F948B2;
+    --five-color: #8758F1;
+    --fourth-color: #FFF;
 }
 
 /* nav section style  */
@@ -26,7 +26,7 @@ nav {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
-nav > div{
+nav>div {
     display: flex;
     align-items: center;
 }
@@ -53,15 +53,18 @@ nav li a {
     font-weight: 700;
 
 }
+
 .nav-container li {
     padding: 0px 30px;
 }
+
 .web-follow-logo {
     display: flex;
     padding: 10px 24px;
     border-radius: 8px;
-background: rgba(11, 2, 35, 0.10);
+    background: rgba(11, 2, 35, 0.10);
 }
+
 .web-follow-logo a {
     text-decoration: none;
 }
@@ -71,8 +74,9 @@ background: rgba(11, 2, 35, 0.10);
     padding-left: 20px;
 
 }
+
 .Title-Char {
-    color:var(--secondery-color);
+    color: var(--secondery-color);
 }
 
 /* nav section style finished  */
@@ -82,90 +86,153 @@ background: rgba(11, 2, 35, 0.10);
     display: flex;
     justify-content: space-between;
     text-align: center;
-    text-transform: uppercase;
+
 }
+
 .playground-section-container img {
-    padding-right:240px ;
+    padding-right: 140px;
 }
+
 .playground-section-container p {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-color);
 
 }
-.playground-title{
+
+.playground-title {
     color: #0B0223;
-font-size: 3rem;
-font-weight: 600;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
+
 .playground-content {
     background-image: url(../images/Group\ 14.png);
-    width:50%;
+    width: 48%;
+    margin-right:50px;
+    margin-bottom: 50px;
 
 }
+
 .playground-content h3 {
-   color: var(--five-color);
-font-size: 5.8rem;
-font-weight: 800;
+    color: var(--five-color);
+    font-size: 5.8rem;
+    font-weight: 800;
 }
-.btn-sing {
-    color:var(--fourth-color);
+
+.btn-primary {
+    color: var(--fourth-color);
     border-radius: 48px;
-background:var(--third-color);
-padding: 21px 40px;
-margin-right: 10px;
+    background: var(--third-color);
+    padding: 21px 40px;
+    margin-right: 10px;
+    text-transform: uppercase;
 }
+
 .btn-go {
     color: var(--fourth-color);
     border-radius: 48px;
-background: #4EC5F7;
-padding: 21px 40px;
+    background: #4EC5F7;
+    padding: 21px 40px;
 }
+
 /* playground section styles finished */
 
+ /* gamer section styles  */
+ .gamer-container {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 66, 165, 0.03);
+    align-items: center;
+    text-align: center;
+ }
+ .gamer-container img{
+    width: 45%;
+ }
+ .gamer-container p {
+    color:var(--primary-color);
+    max-width:520px
+font-size: 1.2rem;
+font-weight: 400;
+padding-right: 150px;
+ }
+ .gamer-content {
+    max-width: 50%;
+ }
+ .gamer-content .bold-text {
+    color:var(--primary-color);
+font-size: 2rem;
+font-weight: 700;
+ }
+
+ .gamer-content .normal-text {
+    color:var(--primary-color);
+font-size: 1.5rem;
+font-weight: 500;
+ }
 /* responsive styles start  */
 
 /* responsive for mobile devices */
 @media screen and (max-width:576px) {
-    nav , .nav-container ul {
+    body{
+        margin:0px;
+    }
+
+    nav,
+    .nav-container ul,  .gamer-container{
         flex-direction: column;
     }
-    nav > div{
+
+    nav>div {
         flex-direction: column;
     }
-    .section-title{
+
+    .section-title {
         padding: 5px;
     }
+
     .nav-container li {
-        padding:20px;
+        padding: 20px;
     }
-    .playground-section-container{
+
+    .playground-section-container {
         flex-direction: column-reverse;
     }
-    .playground-section-container img{
-        width: 100%;
+
+    .playground-section-container img , .gamer-container img{
+        width: 90%;
         margin-top: 30px;
         padding: 0px;
     }
-    .playground-content , .playground-content h3 {
+    .gamer-container p {
         width: 100%;
-        margin:0px;
+        padding: 0px;
     }
-    .playground-content h3{
-        font-size:5rem;
+
+    .playground-content,
+    .playground-content h3 {
+        width: 100%;
+        margin: 0px;
     }
-    .web-follow-logo{
+
+    .playground-content h3 {
+        font-size: 4.9rem;
+    }
+
+    .web-follow-logo {
         margin-bottom: 20px;
     }
+
 }
 
 /* responsive for tablet  */
 @media screen and (min-width:576px) and (max-width:960px) {
-    .playground-section-container img{
+    .playground-section-container img {
         width: 45%;
         margin-top: 30px;
         padding: 0px;
     }
 
-    
+
 }
