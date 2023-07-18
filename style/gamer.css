@@ -233,6 +233,10 @@ font-weight: 500;
         margin-top: 30px;
         padding: 0px;
     }
+    .gamer-container p {
+        width: 100%;
+        padding: 0px;
+    }
 
 
 }
