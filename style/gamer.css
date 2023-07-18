@@ -100,7 +100,7 @@ font-weight: 600;
 }
 .playground-content {
     background-image: url(../images/Group\ 14.png);
-    width: 40%;
+    width:50%;
 
 }
 .playground-content h3 {
@@ -154,4 +154,18 @@ padding: 21px 40px;
     .playground-content h3{
         font-size:5rem;
     }
+    .web-follow-logo{
+        margin-bottom: 20px;
+    }
+}
+
+/* responsive for tablet  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    .playground-section-container img{
+        width: 45%;
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+    
 }
