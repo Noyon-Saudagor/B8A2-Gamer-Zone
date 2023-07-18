@@ -26,7 +26,7 @@ nav {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
-nav div {
+nav > div{
     display: flex;
     align-items: center;
 }
@@ -120,4 +120,38 @@ margin-right: 10px;
     border-radius: 48px;
 background: #4EC5F7;
 padding: 21px 40px;
+}
+/* playground section styles finished */
+
+/* responsive styles start  */
+
+/* responsive for mobile devices */
+@media screen and (max-width:576px) {
+    nav , .nav-container ul {
+        flex-direction: column;
+    }
+    nav > div{
+        flex-direction: column;
+    }
+    .section-title{
+        padding: 5px;
+    }
+    .nav-container li {
+        padding:20px;
+    }
+    .playground-section-container{
+        flex-direction: column-reverse;
+    }
+    .playground-section-container img{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px;
+    }
+    .playground-content , .playground-content h3 {
+        width: 100%;
+        margin:0px;
+    }
+    .playground-content h3{
+        font-size:5rem;
+    }
 }
