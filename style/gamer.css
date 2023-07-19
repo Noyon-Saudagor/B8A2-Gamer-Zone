@@ -175,6 +175,46 @@ nav li a {
     font-weight: 500;
 }
 
+/* card section styles start  */
+.game-video-card-container {
+    text-align: center;
+}
+
+.game-video-card-container .section-title {
+
+    margin-top: 120px;
+
+}
+
+.game-video-card-container p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+}
+
+.section-title .funny {
+    color: var(--five-color);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-deatils {
+    max-width: 340px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.game-video-card:hover {
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.60);
+    background-image: url(../images/pngwing\ 4.png);
+}
+
 /* responsive styles start  */
 
 /* responsive for mobile devices */
@@ -185,7 +225,8 @@ nav li a {
 
     nav,
     .nav-container ul,
-    .gamer-container {
+    .gamer-container,
+    .card-container {
         flex-direction: column;
     }
 
@@ -214,6 +255,7 @@ nav li a {
     }
 
     .gamer-container p {
+        text-align: center;
         width: 100%;
         padding: 0px;
     }
@@ -232,6 +274,15 @@ nav li a {
         margin-bottom: 20px;
     }
 
+    .game-video-card-container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .card-img {
+        width: 50%;
+    }
+
 }
 
 /* responsive for tablet  */
@@ -246,5 +297,10 @@ nav li a {
         width: 100%;
         padding: 0px;
     }
+
+    .card-img {
+        width: 90%;
+    }
+
 
 }
