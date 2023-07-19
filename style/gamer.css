@@ -221,7 +221,7 @@ nav li a {
     justify-content: space-between;
     align-items: center;
     text-align: right;
-    margin: 100px 20px;
+    margin: 100px 20px 20px 100px;
 }
 
 .features-container span {
@@ -252,6 +252,43 @@ nav li a {
 
 }
 
+/* Careers section  */
+.Careers-container {
+    color: var(--fourth-color);
+    display: flex;
+    justify-content: space-between;
+    background: var(--secondery-color);
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.Careers-container h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.Careers-container p {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.See-position {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--third-color);
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: var(--fourth-color);
+    text-transform: uppercase;
+
+}
+
 /* responsive styles start  */
 
 /* responsive for mobile devices */
@@ -264,7 +301,8 @@ nav li a {
     .nav-container ul,
     .gamer-container,
     .card-container,
-    .features-container {
+    .features-container,
+    .Careers-container {
         flex-direction: column;
     }
 
@@ -286,66 +324,77 @@ nav li a {
     }
 
     .playground-section-container img,
-    .gamer-container img {
-        width: 90%;
-        margin-top: 30px;
-        padding: 0px;
-    }
-
-    .gamer-container p {
-        text-align: center;
-        width: 100%;
-        padding: 0px;
-    }
-
-    .playground-content,
-    .playground-content h3 {
-        width: 100%;
-        margin: 0px;
-    }
-
-    .playground-content h3 {
-        font-size: 450%;
-    }
-
-    .web-follow-logo {
-        margin-bottom: 20px;
-    }
-
-    .game-video-card-container {
-        width: 50%;
-        margin: auto;
-    }
-
-    .card-img {
-        width: 50%;
-    }
-
-    .features-container,
+    .gamer-container img,
     {
+    width: 90%;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+.gamer-container p {
+    text-align: center;
     width: 100%;
+    padding: 0px;
+}
+
+.playground-content,
+.playground-content h3,
+.Careers-container,
+.Careers-container img {
+    width: 100%;
+    margin: 0px;
+}
+
+.playground-content h3 {
+    font-size: 450%;
+}
+
+.web-follow-logo {
+    margin-bottom: 20px;
+}
+
+.game-video-card-container {
+    width: 50%;
     margin: auto;
 }
 
+card-img {
+    width: 50%;
+}
+
+.features-container {
+    width: 100%;
+    margin: 0px;
+}
+
 .img1 {
-    width: 80%;
+    width: 70%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .img-position {
     width: 30%;
     position: relative;
     bottom: 50px;
-    right: -25px;
+    right: -20px;
 }
 
 .img-container,
-.features-content {
+.features-content,
+.Careers-container {
     padding: 0px;
+}
+
+.Careers-container {
+    margin: 0px;
 }
 
 .features-content {
     text-align: center;
 }
+
+
 
 }
 
@@ -357,7 +406,8 @@ nav li a {
         padding: 0px;
     }
 
-    .gamer-container p {
+    .gamer-container p,
+    .Careers-container {
         width: 100%;
         padding: 0px;
     }
@@ -377,5 +427,10 @@ nav li a {
         right: -25px;
     }
 
+    .Careers-container img {
+        width: 80%;
+        padding: 0px;
+        margin: 0px;
+    }
 
 }
