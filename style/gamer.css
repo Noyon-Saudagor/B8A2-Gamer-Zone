@@ -25,7 +25,9 @@ nav {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-
+.logo{
+    display: flex;
+}
 nav>div {
     display: flex;
     align-items: center;
@@ -286,9 +288,54 @@ nav li a {
     border-radius: 48px;
     background: var(--fourth-color);
     text-transform: uppercase;
-
 }
 
+/* footer section styles  */
+footer {
+    text-align: center;
+    background-color: #0B0223;
+    padding: 100px 0px;
+}
+.web-title-logo {
+    display: flex;
+    align-items: center;
+}
+.title {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+}
+.title h3 {
+    color: var(--fourth-color);
+   
+}
+.foot-section-title {
+    font-size: 2.8rem;
+    color: var(--fourth-color);
+}
+.foot-section-title span{
+    color: var(--third-color);
+}
+.footer-web-title-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+footer .font-color{
+    color: rgba(255, 255, 255, 0.60);
+}
+.Terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.icon img {
+    width: 4rem;
+    padding: 40px;
+}
 /* responsive styles start  */
 
 /* responsive for mobile devices */
@@ -358,7 +405,7 @@ nav li a {
     margin: auto;
 }
 
-card-img {
+.card-img {
     width: 50%;
 }
 
@@ -376,7 +423,7 @@ card-img {
 .img-position {
     width: 30%;
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     right: -20px;
 }
 
@@ -393,9 +440,12 @@ card-img {
 .features-content {
     text-align: center;
 }
+.title , .Terms {
+    flex-wrap: wrap;
 
-
-
+}
+.icon img {
+    padding: 20px;
 }
 
 /* responsive for tablet  */
