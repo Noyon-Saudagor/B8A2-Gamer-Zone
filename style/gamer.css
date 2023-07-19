@@ -215,6 +215,43 @@ nav li a {
     background-image: url(../images/pngwing\ 4.png);
 }
 
+/* features section styles  */
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin: 100px 20px;
+}
+
+.features-container span {
+    color: var(--five-color);
+
+}
+
+.section-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.features-content {
+    padding-right: 50px;
+    padding-left: 100px;
+}
+
+.img-container {
+    padding-right: 140px;
+}
+
+.img-position {
+    position: relative;
+    bottom: 200px;
+    right: -150px;
+
+
+}
+
 /* responsive styles start  */
 
 /* responsive for mobile devices */
@@ -226,7 +263,8 @@ nav li a {
     nav,
     .nav-container ul,
     .gamer-container,
-    .card-container {
+    .card-container,
+    .features-container {
         flex-direction: column;
     }
 
@@ -283,6 +321,32 @@ nav li a {
         width: 50%;
     }
 
+    .features-container,
+    {
+    width: 100%;
+    margin: auto;
+}
+
+.img1 {
+    width: 80%;
+}
+
+.img-position {
+    width: 30%;
+    position: relative;
+    bottom: 50px;
+    right: -25px;
+}
+
+.img-container,
+.features-content {
+    padding: 0px;
+}
+
+.features-content {
+    text-align: center;
+}
+
 }
 
 /* responsive for tablet  */
@@ -300,6 +364,17 @@ nav li a {
 
     .card-img {
         width: 90%;
+    }
+
+    .img1 {
+        width: 80%;
+    }
+
+    .img-position {
+        width: 30%;
+        position: relative;
+        bottom: 50px;
+        right: -25px;
     }
 
 
